@@ -45,15 +45,11 @@ export default {
 
     // resize browser window to given size
     async resizeWindow (id, width, height) {
-        const page = this.openedPages[id];
-
-        await page.viewport(width, height);
+        await this.nightmare.viewport(width, height);
     },
 
     // take screenshot of given page in browser
     async takeScreenshot (id, screenshotPath) {
-        const page = this.openedPages[id];
-
-        await page.screenshot(screenshotPath);
+        await this.nightmare.screenshot(screenshotPath);
     }
 };
