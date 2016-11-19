@@ -47,7 +47,12 @@ run and the dev tools are already opened. Well, it also enables debug output for
 get a lot debug messages in the console. I'm still figuring out how to properly use filtering in that case ;) ..
 
 NOTE: When running nightmare from a gulp task (e.g. using `child_process.spawn`) you can use `process.env.DEBUG = '*';` to set the
-debug flag in the environment, before spawing the testcafe process.
+debug flag in the environment, before spawning the testcafe process. Another option is to already set the variable when executing your
+test runner, e.g. `gulp`:
+
+```
+DEBUG=* gulp test
+```
 
 
 ## Author
