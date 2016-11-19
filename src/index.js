@@ -27,7 +27,7 @@ export default {
 
     // init browser
     async init () {
-        this.nightmare = await Nightmare({
+        this.nightmare = Nightmare({
             show:         true,
             openDevTools: true,
         });
