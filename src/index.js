@@ -1,4 +1,8 @@
-const Nightmare = require('nightmare');
+/**
+ * Testcafe browser provider plugin for the nightmare browser automation library.
+ */
+import Nightmare from 'nightmare';
+import debug from 'debug';
 
 export default {
     // reference to Nightmare instance
@@ -27,10 +31,12 @@ export default {
 
     // init browser
     async init () {
-        this.nightmare = Nightmare({
-            show:         true,
-            openDevTools: true,
-        });
+        const conf = {
+            show:         debug.enabled(),
+            openDevTools: debug.enabled(),
+        };
+
+        this.nightmare = Nightmare(conf);
     },
 
     async dispose () {
