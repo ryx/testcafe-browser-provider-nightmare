@@ -1,6 +1,6 @@
 {
   "name": "testcafe-browser-provider-nightmare",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "nightmare TestCafe browser provider plugin.",
   "repository": "https://github.com/ryx/testcafe-browser-provider-nightmare",
   "homepage": "https://github.com/ryx/testcafe-browser-provider-nightmare",
