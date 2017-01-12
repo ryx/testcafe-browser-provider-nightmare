@@ -36,7 +36,7 @@ testCafe
 It is incredibly useful to be able to see what is happening inside your browser. Nightmare's big advantage over phantomjs is
 that you can easily enable a visual output to aid in local debugging. The nightmare provider uses the fairly popular
 [debug](https://github.com/visionmedia/debug) library (as does nightmare itself), so you can enable debugging with the
-follwoing commandline:
+following commandline:
 
 ```
 DEBUG=* testcafe nightmare 'path/to/test/file.js'
