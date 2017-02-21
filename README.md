@@ -5,6 +5,8 @@ This is the [nightmare](https://github.com/segmentio/nightmare) browser provider
 It provides an electron-based, headless Chrome browser environment for running your tests in. It is popular for being more
 solid and reliable than phantomjs, while at the same time giving better performance.
 
+*Please note that the current implementation of electron and the underlying Chromium requires XVFB to be installed on Linux host systems, otherwise nightmare will not work. This will hopefully change soon as [a headless mode already landed in Chromium](https://bugs.chromium.org/p/chromium/issues/detail?id=546953#c148).*
+
 
 ## Install
 
