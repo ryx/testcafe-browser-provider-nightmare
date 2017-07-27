@@ -5,7 +5,7 @@ import Nightmare from 'nightmare';
 import Debug from 'debug';
 
 //Add debug namespace
-var debug = Debug("testcafe-browser-provider-nightmare");
+var debug = Debug('testcafe-browser-provider-nightmare');
 
 export default {
     // reference to Nightmare instance
@@ -35,8 +35,8 @@ export default {
     // init browser
     async init () {
         const conf = {
-            show:         debug.enabled(),
-            openDevTools: debug.enabled(),
+            show:         debug.enabled,
+            openDevTools: debug.enabled,
         };
 
         this.nightmare = Nightmare(conf);
