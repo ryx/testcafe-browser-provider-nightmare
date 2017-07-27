@@ -2,7 +2,10 @@
  * Testcafe browser provider plugin for the nightmare browser automation library.
  */
 import Nightmare from 'nightmare';
-import debug from 'debug';
+import Debug from 'debug';
+
+//Add debug namespace
+var debug = Debug("testcafe-browser-provider-nightmare");
 
 export default {
     // reference to Nightmare instance
