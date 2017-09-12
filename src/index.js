@@ -2,7 +2,10 @@
  * Testcafe browser provider plugin for the nightmare browser automation library.
  */
 import Nightmare from 'nightmare';
-import debug from 'debug';
+import Debug from 'debug';
+
+// add debug namespace
+const debug = Debug('testcafe-browser-provider-nightmare');
 
 export default {
     // map with open page references
@@ -14,8 +17,8 @@ export default {
     // open new page in browser
     async openBrowser (id, pageUrl) {
         const conf = {
-            show:         debug.enabled(),
-            openDevTools: debug.enabled(),
+            show:         debug.enabled,
+            openDevTools: debug.enabled,
         };
 
         this.nightmareInstances[id] = Nightmare(conf);

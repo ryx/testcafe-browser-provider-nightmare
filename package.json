@@ -15,7 +15,7 @@
   "scripts": {
     "test": "gulp test",
     "publish-please": "publish-please",
-    "prepublish": "publish-please guard"
+    "prepare": "publish-please guard"
   },
   "keywords": [
     "testcafe",
