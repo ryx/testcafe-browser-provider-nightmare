@@ -41,19 +41,16 @@ that you can easily enable a visual output to aid in local debugging. The nightm
 following commandline:
 
 ```
-DEBUG=* testcafe nightmare 'path/to/test/file.js'
+DEBUG=testcafe-browser-provider-nightmare testcafe nightmare 'path/to/test/file.js'
 ```
 
 This activates the `show` and `openDevTools` options for nightmare, so the browser window becomes visible throughout the test
-run and the dev tools are already opened. Well, it also enables debug output for any other module using debug, so you will
-get a lot debug messages in the console. I'm still figuring out how to properly use filtering in that case ;) ..
+run and the dev tools are already opened.
 
-NOTE: When running nightmare from a gulp task (e.g. using `child_process.spawn`) you can use `process.env.DEBUG = '*';` to set the
-debug flag in the environment, before spawning the testcafe process. Another option is to already set the variable when executing your
-test runner, e.g. `gulp`:
+NOTE: When running nightmare from a gulp task (e.g. using `child_process.spawn`) you can use `process.env.DEBUG = 'testcafe-browser-provider-nightmare';` to set the debug flag in the environment, before spawning the testcafe process. Another option is to already set the variable when executing your test runner, e.g. `gulp`:
 
 ```
-DEBUG=* gulp test
+DEBUG=testcafe-browser-provider-nightmare gulp test
 ```
 
 
