@@ -1,6 +1,6 @@
 {
   "name": "testcafe-browser-provider-nightmare",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "nightmare TestCafe browser provider plugin.",
   "repository": "https://github.com/ryx/testcafe-browser-provider-nightmare",
   "homepage": "https://github.com/ryx/testcafe-browser-provider-nightmare",
@@ -27,7 +27,7 @@
   "dependencies": {
     "babel-runtime": "^6.11.6",
     "debug": "^2.3.2",
-    "nightmare": "^2.9.1"
+    "nightmare": "^2.10.0"
   },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
